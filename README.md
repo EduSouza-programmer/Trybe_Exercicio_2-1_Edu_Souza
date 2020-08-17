@@ -27,7 +27,7 @@
 </p>
 
 <p align="center">
-  <a href="#rocket-sobre-o-desafio">Sobre o Exercício</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#rocket-sobre-o-exercicio">Sobre o Exercício</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#calendar-entrega">Entrega</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-licença">Licença</a>
 </p>
@@ -42,40 +42,34 @@ Você deve colocar os scripts em Shell que desenvolveu nos últimos dias nessa p
 
 -   Crie um commit
 
-### Informações das questões shell script
+## Questões shell script [Meus códigos]
 
--   1. Escreva um _Shell Script_ que imprima na tela a frase: `"Shell Script é demais!"`;
+1. Escreva um _Shell Script_ que imprima na tela a frase: `"Shell Script é demais!"`;
 
-# Resposta:
+#### Resposta:
 
               #!/bin/bash
               echo "Shell Script é demais"
 
-#######
+2. Modifique o _Shell Script_ do exercício anterior para incluir uma variável. A variável deverá receber o conteúdo da mensagem: `"Shell Script com variáveis é demais!"`;
 
--   2. Modifique o _Shell Script_ do exercício anterior para incluir uma variável. A variável deverá receber o conteúdo da mensagem: `"Shell Script com variáveis é demais!"`;
-
-# Resposta:
+#### Resposta:
 
               #!/bin/bash
               FRASE= "Shell Script é demais"
               echo $FRASE
 
-#######
+3. Escreva um _Shell Script_ que guarde o resultado do comando `hostname` em uma variável. Imprima na tela uma mensagem: `"Este script está rodando no computador: _"` em que `"_"` é o resultado do comando `hostname` que está na variável;
 
--   3. Escreva um _Shell Script_ que guarde o resultado do comando `hostname` em uma variável. Imprima na tela uma mensagem: `"Este script está rodando no computador: _"` em que `"_"` é o resultado do comando `hostname` que está na variável;
-
-# Resposta:
+#### Resposta:
 
               #!/bin/bash
               HOSTNAME=`hostname`
               echo "Este script está rodando no computador: $HOSTNAME"
 
-#######
+4. Escreva um _Shell Script_ que verifique se o caminho até um arquivo existe _("file path"_). Se ele existir, imprima na tela a mensagem: `"O caminho _ está habilitado!"`. Então, verifique se você tem permissão de escrita no arquivo. Se tiver, mostre a mensagem: `"Você tem permissão para editar _"`. Caso contrário, mostre a mensagem: `"Você NÃO foi autorizado a editar _"`.     **_O `_` nas mensagens deve ser substituído pelo ("file path").\_**
 
--   4. Escreva um _Shell Script_ que verifique se o caminho até um arquivo existe _("file path"_). Se ele existir, imprima na tela a mensagem: `"O caminho _ está habilitado!"`. Então, verifique se você tem permissão de escrita no arquivo. Se tiver, mostre a mensagem: `"Você tem permissão para editar _"`. Caso contrário, mostre a mensagem: `"Você NÃO foi autorizado a editar _"`.     **_O `_` nas mensagens deve ser substituído pelo ("file path").\_**
-
-# Resposta:
+#### Resposta:
 
               #!/bin/bash
 
@@ -94,11 +88,9 @@ Você deve colocar os scripts em Shell que desenvolveu nos últimos dias nessa p
                   echo "O caminho $FILE NÃO existe"
               fi
 
-#######
+5. Escreva um _Shell Script_ que peça ao usuário um caminho de arquivo ou diretório e, em seguida, imprima na tela se ele é um arquivo comum, um diretório, ou outro tipo de arquivo. Depois, faça um comando de listagem no arquivo/diretório usando a opção de listagem detalhada.
 
--   5. Escreva um _Shell Script_ que peça ao usuário um caminho de arquivo ou diretório e, em seguida, imprima na tela se ele é um arquivo comum, um diretório, ou outro tipo de arquivo. Depois, faça um comando de listagem no arquivo/diretório usando a opção de listagem detalhada.
-
-# Resposta:
+#### Resposta:
 
               #!/bin/bash
 
@@ -133,11 +125,9 @@ Você deve colocar os scripts em Shell que desenvolveu nos últimos dias nessa p
 
               fi
 
-#######
+6.  Modifique o _Shell Script_ do exercício anterior de forma que ele aceite o nome do arquivo ou diretório como argumento (ou parâmetro), em vez de perguntar ao usuário. Pesquise nos recursos adicionais como utilizar os parâmetros (ou argumentos) no _Shell Script_.
 
--   6.  Modifique o _Shell Script_ do exercício anterior de forma que ele aceite o nome do arquivo ou diretório como argumento (ou parâmetro), em vez de perguntar ao usuário. Pesquise nos recursos adicionais como utilizar os parâmetros (ou argumentos) no _Shell Script_.
-
-# Resposta:
+#### Resposta:
 
               #!/bin/bash
 
@@ -170,11 +160,9 @@ Você deve colocar os scripts em Shell que desenvolveu nos últimos dias nessa p
 
               fi
 
-#######
+7. Escreva um _Shell Script_ que receba um diretório como argumento (ou parâmetro). Se o argumento não for um diretório, mostre a mensagem: `"O argumento _ não é um diretório!"`. Se o argumento for um diretório, conte quantos arquivos existem nele e mostre a seguinte mensagem: `"O _ tem _ arquivos."`, em que você deve substituir os `"_"` pelo diretório e a quantidade de arquivos nele, respectivamente.
 
--   7. Escreva um _Shell Script_ que receba um diretório como argumento (ou parâmetro). Se o argumento não for um diretório, mostre a mensagem: `"O argumento _ não é um diretório!"`. Se o argumento for um diretório, conte quantos arquivos existem nele e mostre a seguinte mensagem: `"O _ tem _ arquivos."`, em que você deve substituir os `"_"` pelo diretório e a quantidade de arquivos nele, respectivamente.
-
-# Resposta:
+#### Resposta:
 
               #!/bin/bash
 
@@ -186,13 +174,11 @@ Você deve colocar os scripts em Shell que desenvolveu nos últimos dias nessa p
                   echo "O argumento $1 não é um diretório, tente novamente"
               fi
 
-#######
+# Bônus exercícios
 
-### Bônus exercícios
+1. Escreva um _Shell Script_ que imprima as palavras `"shell"`, `"script"`, `"usando"`, `"estrutura"`, `"repetição"`, `"for"`, `"terminal"` na tela, uma palavra por linha. Tente fazer isso usando o menor número de comandos possível.
 
--   1. Escreva um _Shell Script_ que imprima as palavras `"shell"`, `"script"`, `"usando"`, `"estrutura"`, `"repetição"`, `"for"`, `"terminal"` na tela, uma palavra por linha. Tente fazer isso usando o menor número de comandos possível.
-
-# Resposta:
+#### Resposta:
 
               #!/bin/bash
 
@@ -204,11 +190,9 @@ Você deve colocar os scripts em Shell que desenvolveu nos últimos dias nessa p
 
               done
 
-#######
+2. Modifique o _Shell Script_ do exercício 6 para aceitar uma quantidade ilimitada de arquivos ou diretórios como argumento (ou parâmetro).
 
--   2. Modifique o _Shell Script_ do exercício 6 para aceitar uma quantidade ilimitada de arquivos ou diretórios como argumento (ou parâmetro).
-
-# Resposta:
+#### Resposta:
 
               #!/bin/bash
 
@@ -251,11 +235,9 @@ Você deve colocar os scripts em Shell que desenvolveu nos últimos dias nessa p
 
               done
 
-#######
+3. Escreva um _Shell Script_ que renomeie todos os arquivos do diretório atual que terminam em `".png"`, de forma que o nome do arquivo comece com a data atual no formato `"YYYY-MM-DD"`. Por exemplo, se tiver um arquivo com o nome `"kitten.png"` no diretório atual, e a data de hoje for 16/04/2020, o script deverá mudar o nome do arquivo para `"2020-04-16-kitten.png"`.
 
--   3. Escreva um _Shell Script_ que renomeie todos os arquivos do diretório atual que terminam em `".png"`, de forma que o nome do arquivo comece com a data atual no formato `"YYYY-MM-DD"`. Por exemplo, se tiver um arquivo com o nome `"kitten.png"` no diretório atual, e a data de hoje for 16/04/2020, o script deverá mudar o nome do arquivo para `"2020-04-16-kitten.png"`.
-
-# Resposta:
+#### Resposta:
 
               #!/bin/bash
 
@@ -269,11 +251,9 @@ Você deve colocar os scripts em Shell que desenvolveu nos últimos dias nessa p
 
               done
 
-#######
+4. Modifique o _Shell Script_ do exercício anterior para receber o diretório onde estão os arquivos e a extensão dos arquivos que devem ser modificados como argumento (ou parâmetro). Adicione também um mensagem mostrando como eram o como vão ficar os nomes dos arquivos a serem modificados.
 
--   4. Modifique o _Shell Script_ do exercício anterior para receber o diretório onde estão os arquivos e a extensão dos arquivos que devem ser modificados como argumento (ou parâmetro). Adicione também um mensagem mostrando como eram o como vão ficar os nomes dos arquivos a serem modificados.
-
-# Resposta:
+#### Resposta:
 
               #!/bin/bash
 
@@ -337,8 +317,6 @@ Você deve colocar os scripts em Shell que desenvolveu nos últimos dias nessa p
                       exit
               fi
 
-#######
+## Licença
 
-### Licença
-
-Este projeto está licenciado sob a Licença MIT - consulte [LICENSE](https://opensource.org/licenses/MIT) a página para detalhes.
+Este projeto está licenciado sob a Licença MIT - consulte [LICENSE](https://opensource.org/licenses/MIT) para maiores detalhes.
