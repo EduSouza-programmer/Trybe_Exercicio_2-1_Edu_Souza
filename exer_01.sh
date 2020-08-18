@@ -1,3 +1,7 @@
 #!/bin/bash
 echo "Shell Script é demais"
-# "Eu sou Trybe e..."
+shell-script-changes
+
+=======
+# Vou ter muito sucesso na programação!
+master
