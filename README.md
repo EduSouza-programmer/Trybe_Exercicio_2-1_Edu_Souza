@@ -52,24 +52,24 @@ Você deve colocar os scripts em Shell que desenvolveu nos últimos dias nessa p
 
 #### Resposta:
 
-              #!/bin/bash
-              echo "Shell Script é demais"
+    #!/bin/bash
+    echo "Shell Script é demais"
 
 2. Modifique o _Shell Script_ do exercício anterior para incluir uma variável. A variável deverá receber o conteúdo da mensagem: `"Shell Script com variáveis é demais!"`;
 
 #### Resposta:
 
-              #!/bin/bash
-              FRASE= "Shell Script é demais"
-              echo $FRASE
+    #!/bin/bash
+    FRASE= "Shell Script é demais"
+    echo $FRASE
 
 3. Escreva um _Shell Script_ que guarde o resultado do comando `hostname` em uma variável. Imprima na tela uma mensagem: `"Este script está rodando no computador: _"` em que `"_"` é o resultado do comando `hostname` que está na variável;
 
 #### Resposta:
 
-              #!/bin/bash
-              HOSTNAME=`hostname`
-              echo "Este script está rodando no computador: $HOSTNAME"
+    #!/bin/bash
+    HOSTNAME=`hostname`
+    echo "Este script está rodando no computador: $HOSTNAME"
 
 4. Escreva um _Shell Script_ que verifique se o caminho até um arquivo existe _("file path"_). Se ele existir, imprima na tela a mensagem: `"O caminho _ está habilitado!"`. Então, verifique se você tem permissão de escrita no arquivo. Se tiver, mostre a mensagem: `"Você tem permissão para editar _"`. Caso contrário, mostre a mensagem: `"Você NÃO foi autorizado a editar _"`.     **_O `_` nas mensagens deve ser substituído pelo ("file path").\_**
 
