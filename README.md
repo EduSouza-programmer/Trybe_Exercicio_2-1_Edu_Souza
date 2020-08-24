@@ -50,7 +50,8 @@ Você deve colocar os scripts em Shell que desenvolveu nos últimos dias nessa p
 
 ### Sumário
 
--   1. [Escreva](#Escreva um _Shell Script_ que peça ao usuário um caminho de arquivo ou diretório e, em seguida, imprima na tela se ele é um arquivo comum, um diretório, ou outro tipo de arquivo. Depois, faça um comando de listagem no arquivo/diretório usando a opção de listagem detalhada.)
+<p>teste</p>
+<p>teste</p>
 
 ### Questões shell script [Meus códigos]
 
