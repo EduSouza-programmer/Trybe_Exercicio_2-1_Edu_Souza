@@ -84,8 +84,10 @@ Você deve colocar os scripts em Shell que desenvolveu nos últimos dias nessa p
 
 #### Resposta:
 
+```
     #!/bin/bash
     echo "Shell Script é demais"
+```
 
 <p align="right"> 
     <a href="#Sumário">
