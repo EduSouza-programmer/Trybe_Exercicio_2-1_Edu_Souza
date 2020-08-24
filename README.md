@@ -36,7 +36,7 @@
   <a href="#Licença">Licença</a>
 </p>
 
-## :rocket: Sobre o Exercício
+# :rocket: Sobre o Exercício
 
 Você deve colocar os scripts em Shell que desenvolveu nos últimos dias nessa pasta. Coloque cada exercício em um arquivo separado.
 
@@ -46,9 +46,9 @@ Você deve colocar os scripts em Shell que desenvolveu nos últimos dias nessa p
 
 -   Crie um commit
 
-## Entrega
+# Entrega
 
-### Sumário
+## Sumário
 
 -   <p><a href="#1">1.</a> Escreva um _Shell Script_ que imprima na tela a frase: `"Shell Script é demais!"`;</p>
 
@@ -66,7 +66,7 @@ Você deve colocar os scripts em Shell que desenvolveu nos últimos dias nessa p
 
 #
 
-### Questões shell script [Meus códigos]
+## Questões shell script [Meus códigos]
 
 ### 1°
 
@@ -81,7 +81,7 @@ Você deve colocar os scripts em Shell que desenvolveu nos últimos dias nessa p
     <a href="#Sumário">
     <img alt="Back Sumário" src="https://img.shields.io/badge/Back-Sum%C3%A1rio-orange">
   </a>&nbsp;</p>
-  
+
 #
 
 ### 2°
