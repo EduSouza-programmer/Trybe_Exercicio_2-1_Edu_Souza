@@ -50,7 +50,7 @@ Você deve colocar os scripts em Shell que desenvolveu nos últimos dias nessa p
 
 ### Sumário
 
-<p><a href="#5">teste</a></p>
+<p><a href="5-Resposta">teste</a></p>
 <p>teste</p>
 
 ### Questões shell script [Meus códigos]
@@ -82,6 +82,8 @@ Você deve colocar os scripts em Shell que desenvolveu nos últimos dias nessa p
     HOSTNAME=`hostname`
     echo "Este script está rodando no computador: $HOSTNAME"
 
+#
+
 4. Escreva um _Shell Script_ que verifique se o caminho até um arquivo existe _("file path"_). Se ele existir, imprima na tela a mensagem: `"O caminho _ está habilitado!"`. Então, verifique se você tem permissão de escrita no arquivo. Se tiver, mostre a mensagem: `"Você tem permissão para editar _"`. Caso contrário, mostre a mensagem: `"Você NÃO foi autorizado a editar _"`.     **_O `_` nas mensagens deve ser substituído pelo ("file path").\_**
 
 #### Resposta:
@@ -103,9 +105,11 @@ Você deve colocar os scripts em Shell que desenvolveu nos últimos dias nessa p
         echo "O caminho $FILE NÃO existe"
     fi
 
+#
+
 5. Escreva um _Shell Script_ que peça ao usuário um caminho de arquivo ou diretório e, em seguida, imprima na tela se ele é um arquivo comum, um diretório, ou outro tipo de arquivo. Depois, faça um comando de listagem no arquivo/diretório usando a opção de listagem detalhada.
 
-#### Resposta:
+#### 5-Resposta:
 
     #!/bin/bash
 
@@ -139,6 +143,8 @@ Você deve colocar os scripts em Shell que desenvolveu nos últimos dias nessa p
         ls -halF $FILE
 
     fi
+
+#
 
 6.  Modifique o _Shell Script_ do exercício anterior de forma que ele aceite o nome do arquivo ou diretório como argumento (ou parâmetro), em vez de perguntar ao usuário. Pesquise nos recursos adicionais como utilizar os parâmetros (ou argumentos) no _Shell Script_.
 
@@ -175,6 +181,8 @@ Você deve colocar os scripts em Shell que desenvolveu nos últimos dias nessa p
 
     fi
 
+#
+
 7. Escreva um _Shell Script_ que receba um diretório como argumento (ou parâmetro). Se o argumento não for um diretório, mostre a mensagem: `"O argumento _ não é um diretório!"`. Se o argumento for um diretório, conte quantos arquivos existem nele e mostre a seguinte mensagem: `"O _ tem _ arquivos."`, em que você deve substituir os `"_"` pelo diretório e a quantidade de arquivos nele, respectivamente.
 
 #### Resposta:
@@ -188,6 +196,8 @@ Você deve colocar os scripts em Shell que desenvolveu nos últimos dias nessa p
     else
         echo "O argumento $1 não é um diretório, tente novamente"
     fi
+
+#
 
 # Bônus exercícios
 
