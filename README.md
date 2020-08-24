@@ -95,6 +95,12 @@ Você deve colocar os scripts em Shell que desenvolveu nos últimos dias nessa p
     FRASE= "Shell Script é demais"
     echo $FRASE
 
+<p align="right"> 
+    <a href="#Sumário">
+    <img alt="Back Sumário" src="https://img.shields.io/badge/Back-Sum%C3%A1rio-orange">
+  </a>
+</p>
+
 #
 
 ### 3°
@@ -106,6 +112,12 @@ Você deve colocar os scripts em Shell que desenvolveu nos últimos dias nessa p
     #!/bin/bash
     HOSTNAME=`hostname`
     echo "Este script está rodando no computador: $HOSTNAME"
+
+<p align="right"> 
+    <a href="#Sumário">
+    <img alt="Back Sumário" src="https://img.shields.io/badge/Back-Sum%C3%A1rio-orange">
+  </a>
+</p>
 
 #
 
@@ -131,6 +143,12 @@ Você deve colocar os scripts em Shell que desenvolveu nos últimos dias nessa p
     else
         echo "O caminho $FILE NÃO existe"
     fi
+
+<p align="right"> 
+    <a href="#Sumário">
+    <img alt="Back Sumário" src="https://img.shields.io/badge/Back-Sum%C3%A1rio-orange">
+  </a>
+</p>
 
 #
 
@@ -173,6 +191,12 @@ Você deve colocar os scripts em Shell que desenvolveu nos últimos dias nessa p
 
     fi
 
+<p align="right"> 
+    <a href="#Sumário">
+    <img alt="Back Sumário" src="https://img.shields.io/badge/Back-Sum%C3%A1rio-orange">
+  </a>
+</p>
+
 #
 
 ### 6°
@@ -212,6 +236,12 @@ Você deve colocar os scripts em Shell que desenvolveu nos últimos dias nessa p
 
     fi
 
+<p align="right"> 
+    <a href="#Sumário">
+    <img alt="Back Sumário" src="https://img.shields.io/badge/Back-Sum%C3%A1rio-orange">
+  </a>
+</p>
+
 #
 
 ### 7°
@@ -229,6 +259,12 @@ Você deve colocar os scripts em Shell que desenvolveu nos últimos dias nessa p
     else
         echo "O argumento $1 não é um diretório, tente novamente"
     fi
+
+<p align="right"> 
+    <a href="#Sumário">
+    <img alt="Back Sumário" src="https://img.shields.io/badge/Back-Sum%C3%A1rio-orange">
+  </a>
+</p>
 
 #
 
