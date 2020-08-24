@@ -81,6 +81,7 @@ Você deve colocar os scripts em Shell que desenvolveu nos últimos dias nessa p
     <a href="#Sumário">
     <img alt="Back Sumário" src="https://img.shields.io/badge/Back-Sum%C3%A1rio-orange">
   </a>&nbsp;</p>
+  
 #
 
 ### 2°
