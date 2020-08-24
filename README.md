@@ -1,9 +1,9 @@
 <h1 align="center">
-    <img alt="Launchbase" src="https://i.ibb.co/d4W2x4g/trybe.png" width="400px" />
+    <img alt="Imagem Trybe" src="https://i.ibb.co/d4W2x4g/trybe.png" width="400px" />
 </h1>
 
 <h3 align="center">
-  Exercício 2-1: Trybe - Git & GitHub - O que é e para que serve - Concluído o/ o/ o/
+  Exercício 2-1_&_2-2: Trybe - Git & GitHub - O que é e para que serve & Entendendo os comandos - Concluído o/ o/ o/
 </h3>
 
 <blockquote align="center">“Quanto mais você estuda, mais aprende e se aproxima de realizar seu sonhos!”</blockquote>
@@ -21,7 +21,7 @@
   </a>&nbsp;
 
   <a href="https://edusouza-programmer.github.io/" target="_blank">
-<img alt="Github page site " src="https://img.shields.io/badge/Github%20page-Site-orange">
+<img alt="Github page Edu_Souza " src="https://img.shields.io/badge/Github%20page-Edu_Souza-orange">
 </a>&nbsp;
 
   <a href="LICENSE" >
@@ -31,9 +31,9 @@
 </p>
 
 <p align="center">
-  <a href="#rocket-sobre-o-exercicio">Sobre o Exercício</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-  <a href="#calendar-entrega">Entrega</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-  <a href="#memo-licença">Licença</a>
+  <a href="#rocket-Sobre-o-Exercicio">Sobre o Exercício</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+  <a href="#Entrega">Entrega</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+  <a href="#Licença">Licença</a>
 </p>
 
 ## :rocket: Sobre o Exercício
@@ -46,7 +46,13 @@ Você deve colocar os scripts em Shell que desenvolveu nos últimos dias nessa p
 
 -   Crie um commit
 
-## Questões shell script [Meus códigos]
+## Entrega
+
+### Sumário
+
+-   1. [Escreva](#Escreva um _Shell Script_ que peça ao usuário um caminho de arquivo ou diretório e, em seguida, imprima na tela se ele é um arquivo comum, um diretório, ou outro tipo de arquivo. Depois, faça um comando de listagem no arquivo/diretório usando a opção de listagem detalhada.)
+
+### Questões shell script [Meus códigos]
 
 1. Escreva um _Shell Script_ que imprima na tela a frase: `"Shell Script é demais!"`;
 
