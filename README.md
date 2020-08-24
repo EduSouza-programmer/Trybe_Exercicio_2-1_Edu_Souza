@@ -84,7 +84,7 @@ Você deve colocar os scripts em Shell que desenvolveu nos últimos dias nessa p
 
 #### Resposta:
 
-```
+```sh
     #!/bin/bash
     echo "Shell Script é demais"
 ```
