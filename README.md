@@ -50,7 +50,7 @@ Você deve colocar os scripts em Shell que desenvolveu nos últimos dias nessa p
 
 ### Sumário
 
-<p>teste</p>
+<p><a href="#5">teste</a></p>
 <p>teste</p>
 
 ### Questões shell script [Meus códigos]
@@ -62,6 +62,8 @@ Você deve colocar os scripts em Shell que desenvolveu nos últimos dias nessa p
     #!/bin/bash
     echo "Shell Script é demais"
 
+#
+
 2. Modifique o _Shell Script_ do exercício anterior para incluir uma variável. A variável deverá receber o conteúdo da mensagem: `"Shell Script com variáveis é demais!"`;
 
 #### Resposta:
@@ -69,6 +71,8 @@ Você deve colocar os scripts em Shell que desenvolveu nos últimos dias nessa p
     #!/bin/bash
     FRASE= "Shell Script é demais"
     echo $FRASE
+
+#
 
 3. Escreva um _Shell Script_ que guarde o resultado do comando `hostname` em uma variável. Imprima na tela uma mensagem: `"Este script está rodando no computador: _"` em que `"_"` é o resultado do comando `hostname` que está na variável;
 
