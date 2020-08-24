@@ -411,7 +411,7 @@ done
 
 #### Resposta:
 
-```javascript
+```sh
 #!/bin/bash
 
 PLACE=$1
