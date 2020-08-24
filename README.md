@@ -48,7 +48,7 @@ Você deve colocar os scripts em Shell que desenvolveu nos últimos dias nessa p
 
 # Entrega
 
-## Sumário
+### Sumário
 
 -   <p><a href="#1">1.</a> Escreva um _Shell Script_ que imprima na tela a frase: `"Shell Script é demais!"`;</p>
 
