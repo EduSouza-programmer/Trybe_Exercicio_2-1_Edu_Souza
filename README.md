@@ -31,7 +31,7 @@
 </p>
 
 <p align="center">
-  <a href="#rocket-Sobre-o-Exercicio">Sobre o Exercício</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+  <a href="#Sobre o Exercicio">Sobre o Exercício</a>&nbsp;&nbsp;|&nbsp;&nbsp;
   <a href="#Entrega">Entrega</a>&nbsp;&nbsp;|&nbsp;&nbsp;
   <a href="#Licença">Licença</a>
 </p>
