@@ -85,8 +85,8 @@ Você deve colocar os scripts em Shell que desenvolveu nos últimos dias nessa p
 #### Resposta:
 
 ```sh
-    #!/bin/bash
-    echo "Shell Script é demais"
+#!/bin/bash
+echo "Shell Script é demais"
 ```
 
 <p align="right"> 
@@ -103,9 +103,11 @@ Você deve colocar os scripts em Shell que desenvolveu nos últimos dias nessa p
 
 #### Resposta:
 
-    #!/bin/bash
-    FRASE= "Shell Script é demais"
-    echo $FRASE
+```sh
+#!/bin/bash
+FRASE= "Shell Script é demais"
+echo $FRASE
+```
 
 <p align="right"> 
     <a href="#Sumário">
@@ -121,9 +123,11 @@ Você deve colocar os scripts em Shell que desenvolveu nos últimos dias nessa p
 
 #### Resposta:
 
-    #!/bin/bash
-    HOSTNAME=`hostname`
-    echo "Este script está rodando no computador: $HOSTNAME"
+```sh
+#!/bin/bash
+HOSTNAME=`hostname`
+echo "Este script está rodando no computador: $HOSTNAME"
+```
 
 <p align="right"> 
     <a href="#Sumário">
@@ -139,22 +143,24 @@ Você deve colocar os scripts em Shell que desenvolveu nos últimos dias nessa p
 
 #### Resposta:
 
-    #!/bin/bash
+```sh
+#!/bin/bash
 
-    FILE="/home/dadokari/trybe_codes/1-5/teste.sh"
+FILE="/home/dadokari/trybe_codes/1-5/teste.sh"
 
-    if [ -e $FILE ] # "-e" serve pra saber se o arquivo ou diretório existe
+if [ -e $FILE ] # "-e" serve pra saber se o arquivo ou diretório existe
+then
+    echo "O caminho $FILE está habilitado"
+    if [ -w $FILE ] # "-w" serve para saber se temos permissões de editar o arquivo
     then
-        echo "O caminho $FILE está habilitado"
-        if [ -w $FILE ] # "-w" serve para saber se temos permissões de editar o arquivo
-        then
-                echo "Você têm permissão para editar"
-        else
-                echo "Você NÃO têm permissão para editar"
-        fi
+            echo "Você têm permissão para editar"
     else
-        echo "O caminho $FILE NÃO existe"
+            echo "Você NÃO têm permissão para editar"
     fi
+else
+    echo "O caminho $FILE NÃO existe"
+fi
+```
 
 <p align="right"> 
     <a href="#Sumário">
@@ -170,38 +176,40 @@ Você deve colocar os scripts em Shell que desenvolveu nos últimos dias nessa p
 
 #### Resposta:
 
-    #!/bin/bash
+```sh
+#!/bin/bash
 
-    read -p "É diretório ou arquivo? digite: " FILE
+read -p "É diretório ou arquivo? digite: " FILE
 
-    if [ -f "$FILE" ]
-    then
-        echo "$FILE é um arquivo comum"
-        echo "Lendo o arquivo"
-        sleep 1; echo "."; sleep 1; echo ".."; sleep 1; echo "..."; sleep 1
-        echo "Aqui está a lista do arquivo"
-        echo ""
-        ls -halF $FILE
+if [ -f "$FILE" ]
+then
+    echo "$FILE é um arquivo comum"
+    echo "Lendo o arquivo"
+    sleep 1; echo "."; sleep 1; echo ".."; sleep 1; echo "..."; sleep 1
+    echo "Aqui está a lista do arquivo"
+    echo ""
+    ls -halF $FILE
 
 
-    elif [ -d "$FILE" ]
-    then
-        echo "$FILE é um diretório"
-        echo "Lendo o diretório"
-        sleep 1; echo "."; sleep 1; echo ".."; sleep 1; echo "..."; sleep 1
-        echo "Aqui está a lista do diretório"
-        echo ""
-        ls -halF $FILE
+elif [ -d "$FILE" ]
+then
+    echo "$FILE é um diretório"
+    echo "Lendo o diretório"
+    sleep 1; echo "."; sleep 1; echo ".."; sleep 1; echo "..."; sleep 1
+    echo "Aqui está a lista do diretório"
+    echo ""
+    ls -halF $FILE
 
-    else
-        echo "$FILE Hummm...isto é alguma outra coisa"
-        echo "Lendo o (...)"
-        sleep 1; echo "."; sleep 1; echo ".."; sleep 1; echo "..."; sleep 1
-        echo "Aqui está a resolução"
-        echo ""
-        ls -halF $FILE
+else
+    echo "$FILE Hummm...isto é alguma outra coisa"
+    echo "Lendo o (...)"
+    sleep 1; echo "."; sleep 1; echo ".."; sleep 1; echo "..."; sleep 1
+    echo "Aqui está a resolução"
+    echo ""
+    ls -halF $FILE
 
-    fi
+fi
+```
 
 <p align="right"> 
     <a href="#Sumário">
@@ -217,36 +225,38 @@ Você deve colocar os scripts em Shell que desenvolveu nos últimos dias nessa p
 
 #### Resposta:
 
-    #!/bin/bash
+```sh
+#!/bin/bash
 
-    if [ -f "$1" ]
-    then
-        echo "$1 é um arquivo comum"
-        echo "Lendo o arquivo"
-        sleep 1; echo "."; sleep 1; echo ".."; sleep 1; echo "..."; sleep 1
-        echo "Aqui está a lista do arquivo"
-        echo ""
-        ls -halF $1
+if [ -f "$1" ]
+then
+    echo "$1 é um arquivo comum"
+    echo "Lendo o arquivo"
+    sleep 1; echo "."; sleep 1; echo ".."; sleep 1; echo "..."; sleep 1
+    echo "Aqui está a lista do arquivo"
+    echo ""
+    ls -halF $1
 
 
-    elif [ -d "$1" ]
-    then
-        echo "$1 é um diretório"
-        echo "Lendo o diretório"
-        sleep 1; echo "."; sleep 1; echo ".."; sleep 1; echo "..."; sleep 1
-        echo "Aqui está a lista do diretório"
-        echo ""
-        ls -halF $1
+elif [ -d "$1" ]
+then
+    echo "$1 é um diretório"
+    echo "Lendo o diretório"
+    sleep 1; echo "."; sleep 1; echo ".."; sleep 1; echo "..."; sleep 1
+    echo "Aqui está a lista do diretório"
+    echo ""
+    ls -halF $1
 
-    else
-        echo "$1 Hummm...isto é alguma outra coisa"
-        echo "Lendo o diretório atual"
-        sleep 1; echo "."; sleep 1; echo ".."; sleep 1; echo "..."; sleep 1
-        echo "Aqui está do diretório"
-        echo ""
-        ls -halF $1
+else
+    echo "$1 Hummm...isto é alguma outra coisa"
+    echo "Lendo o diretório atual"
+    sleep 1; echo "."; sleep 1; echo ".."; sleep 1; echo "..."; sleep 1
+    echo "Aqui está do diretório"
+    echo ""
+    ls -halF $1
 
-    fi
+fi
+```
 
 <p align="right"> 
     <a href="#Sumário">
@@ -262,15 +272,17 @@ Você deve colocar os scripts em Shell que desenvolveu nos últimos dias nessa p
 
 #### Resposta:
 
-    #!/bin/bash
+```sh
+#!/bin/bash
 
-    if [ -d "$1 ]
-    then
-        FILE =`ls -halF $1 | wc -l`
-        echo "O diretório $1 têm $FILE arquivos"
-    else
-        echo "O argumento $1 não é um diretório, tente novamente"
-    fi
+if [ -d "$1 ]
+then
+    FILE =`ls -halF $1 | wc -l`
+    echo "O diretório $1 têm $FILE arquivos"
+else
+    echo "O argumento $1 não é um diretório, tente novamente"
+fi
+```
 
 <p align="right"> 
     <a href="#Sumário">
@@ -288,15 +300,17 @@ Você deve colocar os scripts em Shell que desenvolveu nos últimos dias nessa p
 
 #### Resposta:
 
-    #!/bin/bash
+```sh
+#!/bin/bash
 
-    WORDS="shell script usando estrutura repetição for terminal"
+WORDS="shell script usando estrutura repetição for terminal"
 
-    for i in $WORDS
-    do
-        echo $i
+for i in $WORDS
+do
+    echo $i
 
-    done
+done
+```
 
 <p align="right"> 
     <a href="#Sumário">
@@ -312,46 +326,48 @@ Você deve colocar os scripts em Shell que desenvolveu nos últimos dias nessa p
 
 #### Resposta:
 
-    #!/bin/bash
+```sh
+#!/bin/bash
 
-    PARAMS=$@
+PARAMS=$@
 
-    for i in $PARAMS
-    do
-        if [ -f "$i" ]
-        then
-            echo "$i é um arquivo comum"
-            echo "Lendo o arquivo"
-            sleep 1; echo "."; sleep 1; echo ".."; sleep 1; echo "..."; sleep 1
-            echo "Aqui está a lista do arquivo"
-            echo ""
-            ls -halF $i
-            echo "" ; echo ""
+for i in $PARAMS
+do
+if [ -f "$i" ]
+then
+    echo "$i é um arquivo comum"
+    echo "Lendo o arquivo"
+    sleep 1; echo "."; sleep 1; echo ".."; sleep 1; echo "..."; sleep 1
+    echo "Aqui está a lista do arquivo"
+    echo ""
+    ls -halF $i
+    echo "" ; echo ""
 
 
 
-        elif [ -d "$i" ]
-        then
-            echo "$i é um diretório"
-            echo "Lendo o diretório"
-            sleep 1; echo "."; sleep 1; echo ".."; sleep 1; echo "..."; sleep 1
-            echo "Aqui está a lista do diretório"
-            echo ""
-            ls -halF $i
-            echo "" ; echo ""
+elif [ -d "$i" ]
+then
+    echo "$i é um diretório"
+    echo "Lendo o diretório"
+    sleep 1; echo "."; sleep 1; echo ".."; sleep 1; echo "..."; sleep 1
+    echo "Aqui está a lista do diretório"
+    echo ""
+    ls -halF $i
+    echo "" ; echo ""
 
-        else
-            echo "$i Hummm...isto é alguma outra coisa"
-            echo "Lendo o diretório atual"
-            sleep 1; echo "."; sleep 1; echo ".."; sleep 1; echo "..."; sleep 1
-            echo "Aqui está do diretório"
-            echo ""
-            ls -halF $i
-            echo "" ; echo ""
+else
+    echo "$i Hummm...isto é alguma outra coisa"
+    echo "Lendo o diretório atual"
+    sleep 1; echo "."; sleep 1; echo ".."; sleep 1; echo "..."; sleep 1
+    echo "Aqui está do diretório"
+    echo ""
+    ls -halF $i
+    echo "" ; echo ""
 
-        fi
+fi
 
-    done
+done
+```
 
 <p align="right"> 
     <a href="#Sumário">
@@ -367,17 +383,19 @@ Você deve colocar os scripts em Shell que desenvolveu nos últimos dias nessa p
 
 #### Resposta:
 
-    #!/bin/bash
+```sh
+#!/bin/bash
 
-    DATE=`date +%F`
+DATE=`date +%F`
 
-    for i in `ls *.png`
-    do
+for i in `ls *.png`
+do
 
-        FILE="$DATE-$i"
-        mv $i $FILE
+    FILE="$DATE-$i"
+    mv $i $FILE
 
-    done
+done
+```
 
 <p align="right"> 
     <a href="#Sumário">
@@ -393,67 +411,69 @@ Você deve colocar os scripts em Shell que desenvolveu nos últimos dias nessa p
 
 #### Resposta:
 
-    #!/bin/bash
+```sh
+#!/bin/bash
 
-    PLACE=$1
-    EXTENSION=$2
+PLACE=$1
+EXTENSION=$2
 
-    DATE=$(date +%F)
+DATE=$(date +%F)
 
 
 
-    if [ -d $PLACE ]
+if [ -d $PLACE ]
+then
+
+    echo "Por favor digite o prefixo, ou se preferir NÃO usar-lo aperte enter"
+    read PREFIX
+    echo ""
+    cd $PLACE
+    echo "Diretório alvo foi: $PLACE"
+    echo ""
+    echo "Listando arquivos do diretório"
+    sleep 1; echo "."; sleep 1; echo ".."; sleep 1; echo "..."; sleep 1
+    ls $PLACE
+
+    if [ -z $PREFIX ]
     then
 
-        echo "Por favor digite o prefixo, ou se preferir NÃO usar-lo aperte enter"
-        read PREFIX
-        echo ""
-        cd $PLACE
-        echo "Diretório alvo foi: $PLACE"
-        echo ""
-        echo "Listando arquivos do diretório"
+echo ""
+        echo "Sua escolha foi optar por não inserir prefixo"
+        echo "processando os arquivos"
         sleep 1; echo "."; sleep 1; echo ".."; sleep 1; echo "..."; sleep 1
-        ls $PLACE
 
-        if [ -z $PREFIX ]
-        then
-
-    echo ""
-            echo "Sua escolha foi optar por não inserir prefixo"
-            echo "processando os arquivos"
-            sleep 1; echo "."; sleep 1; echo ".."; sleep 1; echo "..."; sleep 1
-
-            for i in `ls *$EXTENSION`
-            do
-                mv $i ${DATE}-${i}
-                echo "O aquivo: $i foi renomeado para: ${DATE}-${i}"
-                echo ""
-            done
-            echo "Concluído com sucesso"
-            exit
-
-        else
-    echo ""
-            echo "Você optou por um prefixo de nome: $PREFIX"
-            echo "processando os arquivos"
-            sleep 1; echo "."; sleep 1; echo ".."; sleep 1; echo "..."; sleep 1
-
-            for i in `ls *$EXTENSION`
-            do
-                mv $i ${PREFIX}_${DATE}-${i}
-                echo "O aquivo: $i foi renomeado para: ${PREFIX}_${DATE}-${i}"
-                echo ""
-            done
-            echo "Concluído com sucesso"
-            exit
-        fi
+        for i in `ls *$EXTENSION`
+        do
+            mv $i ${DATE}-${i}
+            echo "O aquivo: $i foi renomeado para: ${DATE}-${i}"
+            echo ""
+        done
+        echo "Concluído com sucesso"
+        exit
 
     else
+echo ""
+        echo "Você optou por um prefixo de nome: $PREFIX"
+        echo "processando os arquivos"
+        sleep 1; echo "."; sleep 1; echo ".."; sleep 1; echo "..."; sleep 1
 
-            echo "O diretório informado : $PLACE NÃO EXISTE"
-            echo "Processo cancelado"
-            exit
+        for i in `ls *$EXTENSION`
+        do
+            mv $i ${PREFIX}_${DATE}-${i}
+            echo "O aquivo: $i foi renomeado para: ${PREFIX}_${DATE}-${i}"
+            echo ""
+        done
+        echo "Concluído com sucesso"
+        exit
     fi
+
+else
+
+        echo "O diretório informado : $PLACE NÃO EXISTE"
+        echo "Processo cancelado"
+        exit
+fi
+```
 
 <p align="right"> 
     <a href="#Sumário">
