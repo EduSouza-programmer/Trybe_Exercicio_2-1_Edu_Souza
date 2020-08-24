@@ -411,15 +411,13 @@ done
 
 #### Resposta:
 
-```sh
+```shell
 #!/bin/bash
 
 PLACE=$1
 EXTENSION=$2
 
 DATE=$(date +%F)
-
-
 
 if [ -d $PLACE ]
 then
